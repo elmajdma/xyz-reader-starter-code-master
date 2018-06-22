@@ -1,38 +1,47 @@
-<android.support.constraint.ConstraintLayout
+<android.support.design.widget.CoordinatorLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
-  xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  >
+  android:layout_height="match_parent">
+  <android.support.constraint.ConstraintLayout
 
-  <include
-    android:id="@+id/include"
-    layout="@layout/xyz_toolbar"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"/>
+    android:layout_height="match_parent"
+    >
+
+    <include
+      android:id="@+id/include"
+      layout="@layout/xyz_toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
 
 
-  <android.support.v4.widget.SwipeRefreshLayout
-    android:id="@+id/swipe_refresh_layout"
-    android:layout_width="0dp"
-    android:layout_height="0dp"
-    android:layout_gravity="center"
-    android:fitsSystemWindows="true"
-    android:scrollbars="vertical"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/include">
+    <android.support.v4.widget.SwipeRefreshLayout
+      android:id="@+id/swipe_refresh_layout"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_gravity="center"
+      android:fitsSystemWindows="true"
+      android:scrollbars="vertical"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/include">
 
-    <android.support.v7.widget.RecyclerView
-      android:id="@+id/recycler_view"
-      style="@style/ArticleRecyclerView"/>
+      <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        style="@style/ArticleRecyclerView"/>
 
-  </android.support.v4.widget.SwipeRefreshLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
 
 
-</android.support.constraint.ConstraintLayout>
+  </android.support.constraint.ConstraintLayout>
+
+
+  </android.support.design.widget.CoordinatorLayout>
+
+
