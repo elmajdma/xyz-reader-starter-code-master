@@ -123,7 +123,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/article_date"/>
 
-      <ImageButton
+      <!--<ImageButton
         android:id="@+id/share_fab"
         android:layout_width="56dp"
         android:layout_height="56dp"
@@ -136,8 +136,20 @@
         android:stateListAnimator="@anim/fab_state_list_anim"
         app:layout_constraintBottom_toBottomOf="@+id/photo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photo"/>-->
+
+      <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        style="@style/FabStyle"
+        app:layout_anchorGravity="bottom|right|end"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/photo"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/photo"/>
 
     </android.support.constraint.ConstraintLayout>
   </com.example.xyzreader.ui.ObservableScrollView>
+
+
+
 </android.support.constraint.ConstraintLayout>
